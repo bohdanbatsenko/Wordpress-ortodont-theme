@@ -1,0 +1,51 @@
+.single-project
+	padding: 35px 0
+	.entry-header
+		padding: 25px 0
+		text-transform: uppercase
+
+
+.post-navigation
+	display: flex
+	.nav-previous,
+	.nav-next
+		padding: 10px
+		a
+			transition: all .3s ease-in-out
+			color: #000
+			font-size: 24px										
+		&:hover
+			a
+				&::after
+					margin-left: 25px
+				&::before
+					margin-right: 25px
+	.nav-previous
+		a
+			&::before
+				display: inline-block
+				content: ""
+				width: 12px
+				height: 10px
+				background: url(../img/arrow.svg)							
+				margin-right: 10px
+				transform: rotate(180deg)					
+				transition: all .3s	ease
+	.nav-next
+		a
+			&::after
+				display: inline-block
+				content: ""
+				width: 12px
+				height: 10px
+				background: url(../img/arrow.svg)							
+				margin-left: 10px
+				transition: all .3s ease
+	.link-to-archive 
+		a
+			i
+				color: #000
+				font-size: 40px
+
+
+

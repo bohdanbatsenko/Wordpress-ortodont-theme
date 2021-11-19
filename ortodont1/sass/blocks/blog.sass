@@ -1,0 +1,119 @@
+
+.blog-archive
+	.page-header
+	.entry-title
+		@media screen and (max-width: 576px)
+			font-size: 28px
+	.post-thumbnail
+		display: inline-block
+		@media screen and (max-width: 576px)
+			margin-bottom: 30px
+	.entry-content
+		margin-top: 0
+	.posts-navigation
+		.nav-links
+			.nav-previous,
+			.nav-next
+				padding: 10px
+				a
+					transition: all .3s ease-in-out
+					color: #000
+					font-size: 24px										
+				&:hover
+					a
+						&::after
+							margin-left: 25px
+						&::before
+							margin-right: 25px
+			.nav-previous
+				a
+					&::before
+						display: inline-block
+						content: ""
+						width: 12px
+						height: 10px
+						background: url(../img/arrow.svg)							
+						margin-right: 10px
+						transform: rotate(180deg)					
+						transition: all .3s	ease
+			.nav-next
+				a
+					&::after
+						display: inline-block
+						content: ""
+						width: 12px
+						height: 10px
+						background: url(../img/arrow.svg)							
+						margin-left: 10px
+						transition: all .3s ease
+
+
+// single.php sidebar
+.widget-area
+	margin-top: 65px
+	@media screen and ( min-width: 768px )
+		padding-left: 15px
+		
+	.widget-title
+		font-size: 24px
+
+
+// archive page
+.page-header		
+	padding: 55px 0 35px
+	text-transform: uppercase
+
+//single post		
+.entry-header
+	padding: 55px 0 35px
+	text-transform: uppercase
+
+.blog
+	padding: 35px 0
+	.blog-page-title
+		padding: 25px 0
+		text-transform: uppercase
+	.blog-post
+		margin-bottom: 25px
+		padding: 18px 14px
+		transition: all .3s ease
+		&:hover
+			//background: rgba($main-color-dark, .1)
+			outline: 1px solid $main-color-dark
+			outline-offset: 5px
+			a
+				color: $main-color-dark
+				.blog-thumbnail img
+					transform: scale(1.2)
+				.blog-post-title
+					color: $main-color-dark
+					&::after
+						display: inline-block
+						content: ""
+						width: 25px
+						height: 20px
+						background: url(../img/arrow.svg)
+						background-repeat: no-repeat
+						background-size: contain
+						transform: translateY(3px)
+						margin-left: 10px			
+						transition: all .3s	ease					
+		a
+			color: #000
+			.blog-thumbnail
+				margin-bottom: 15px
+				overflow: hidden
+				img
+					transition: all .3s ease
+			.blog-post-title
+				font-size: 1.6rem
+				padding: 0 0 15px
+				transition: all .3s ease
+				position: relative
+
+	.blue-btn
+		line-height: 1
+
+
+		
+				

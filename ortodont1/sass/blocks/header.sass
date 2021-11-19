@@ -1,0 +1,156 @@
+.fixed-header
+	position: fixed!important
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 999
+	background-color: #f1f1f1		
+
+// body.home.page-template.page-template-template-parts.page-template-template-home
+// 	background: transparent!important
+// 	background-color: transparent!important
+// 	background: transparent!important
+// 	background-color: none!important	
+// #page,
+// .site,
+#page.site
+	position: relative
+	.top-header-holder
+		width: 100%
+		background: #f1f1f1
+		//margin-bottom: 260px
+		position: relative
+	header.site-header
+		padding-top: 20px
+		border-bottom: 1px solid $main-color-dark	
+		// position: fixed
+		// width: 100%
+		// top: 0
+		// left: 0
+		// z-index: 999
+		//margin-bottom: 50px
+		&.is-home
+			padding: 50px 0
+			//position: fixed
+			//top: 0
+			//left: 0
+			//width: 100%
+			border-bottom: 1px solid $main-color-dark	
+			padding-bottom: 10px
+			
+			.custom-logo
+				display: none
+				@media screen and (max-width:768px)	
+					display: block
+			#main-menu
+				.menu-item
+					a
+						color: #000!important
+						span
+							color: #000!important
+
+	
+
+
+	.top-line
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		z-index: 100			
+
+
+	#menu
+		padding: 0
+		@media screen and (max-width:768px)
+			padding: 10px 15px
+		.custom-logo
+			max-width: 70px
+			@media screen and (min-width:768px)
+				margin-right: 100px
+		#main-menu
+			@media screen and (min-width:768px)
+				flex: 1
+				justify-content: space-between
+			@media screen and (max-width:768px)
+				padding: 20px
+				background-color: #f1f1f1
+			li.menu-item
+				.nav-link
+					font-weight: 500
+					font-size: 18px
+					text-transform: uppercase
+					padding: 1em .5em
+					color: #000!important
+					span
+						color: #000
+				&.current-menu-item.current_page_item
+					.nav-link
+						color: $main-color-dark!important
+						span
+							color: $main-color-dark
+				// &.current-menu-item
+				// 	a
+				// 		color: $main-color-dark
+				// 		span
+				// 			color: $main-color-dark
+
+		.site-header__util
+			@media screen and (max-width:768px)
+				display: none
+
+
+
+.site-header
+	width: 100%
+
+.site-title
+	margin: 10px 0 0 -2px
+	padding: 0
+	line-height: 1em
+	font-size: 30px
+	letter-spacing: 1px
+	a
+		margin: 0
+		&:hover
+			text-decoration: none
+
+
+.navbar
+	padding-left: 0
+	padding-right: 0
+.open > .dropdown-menu
+	transform: scale(1,1)
+	opacity: 1
+.dropdown-menu
+	margin-top: 0
+	opacity: .5
+	transform-origin: top
+	animation-fill-mode: forwards
+	transform: scale(1,0)
+	transition: all .3s linear
+.dropdown-toggle::after
+	vertical-align: .150em
+
+
+.top,
+.top:link
+	color: #333
+	position: fixed
+	z-index: 999
+	bottom: 20px
+	right: 20px
+	width: 40px
+	height: 40px
+	font-size: 24px
+	font-weight: 700
+	line-height: 40px
+	text-align: center
+	text-transform: uppercase
+	opacity: .9
+	border: none
+	&:hover
+		opacity: 1
+		text-decoration: none
+		color: #fff
+		background: #333

@@ -1,0 +1,72 @@
+.site-footer
+	position: relative
+	background-color: #f1f1f1
+	padding: 60px 0 0 0
+	.info-part
+		.title
+			color: rgba($main-color-dark,.4)
+			font-size: 36px
+			font-weight: 700
+			padding-bottom: 30px
+			line-height: 1.1
+			@media (max-width: 576px)
+				font-size: 24px
+				padding-bottom: 20px
+	.info
+		font-weight: 700
+		font-size: 14px
+		padding-bottom: 15px
+		span
+			display: block
+			font-weight: 300
+			color: #acb8d4
+			font-size: 14px
+			padding-bottom: 10px
+			text-decoration: none
+			@media (max-width: 576px)
+				font-size: 12px
+		&.phone
+			font-size: 16px
+			a
+				text-decoration: none
+				color: #000
+				transition: color .5s ease
+				&:hover
+					color: rgba($main-color-dark,.4)
+					transition: color .5s ease
+	.footer-list
+		list-style-type: none
+		margin: 0
+		padding: 0
+		&-item
+			.footer-link
+				display: block
+				font-weight: 700
+				font-size: 14px
+				color: #000000
+				text-decoration: none
+				padding-bottom: 30px
+				transition: color .5s ease
+				&:hover
+					color: rgba($main-color-dark,.4)
+					transition: color .5s ease
+				@media (max-width: 576px)
+					font-size: 12px
+					padding-bottom: 25px
+	.site-branding
+		padding-bottom: 25px
+		.custom-logo-link
+			img
+				width: 120px
+	.social
+		@extend %social
+		.icon
+			@extend %icon
+	.info
+		margin-bottom: 0
+		padding-bottom: 0
+	.developed
+		margin-top: 0
+		padding-top: 0
+
+
